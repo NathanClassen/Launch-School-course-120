@@ -1,0 +1,30 @@
+Exercise 1
+
+  We create objects by creating new instances of a class.
+    
+    ex. string_object = String.new
+        string_object = "This is a string object"
+
+  Terminology correction.. We instantiate the object.
+
+Exercise 2
+
+  A module is a collection of functionality that can be "mixed in" to a class.
+
+  Modules are another way to achieve polymorphism. The purpose of Modules is to make sectioned off data, reusable chunks of data, available to other classes and objects.
+
+  We use Modules by creating a mixin..mixing them into classes via the include method
+
+    ex. module SportsPackage
+          def turbo
+            acceleration += 4
+          end
+          def nitrous
+            max_speed += 50
+          end
+        end
+
+        class Car
+          include SportsPackage
+        end
+
